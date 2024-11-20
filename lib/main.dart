@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:app_ng_store/screens/tela_inicial.dart';
+import 'package:app_ng_store/screens/tela_1.dart';
 
 final theme = ThemeData(
   useMaterial3: true,
@@ -11,9 +12,9 @@ final theme = ThemeData(
     surface: const Color(0xFF21224E),
   ),
   scaffoldBackgroundColor: const Color(0xFF21224E),
-  appBarTheme: AppBarTheme(
-    backgroundColor: const Color(0xFF21224E),
-    titleTextStyle: const TextStyle(
+  appBarTheme: const AppBarTheme(
+    backgroundColor: Color(0xFF21224E),
+    titleTextStyle: TextStyle(
       color: Colors.white,
       fontSize: 24,
       fontWeight: FontWeight.bold,
@@ -36,10 +37,16 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: theme,
-      home: const TelaInicial(),
+    return DefaultTabController(
+      length: 3,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: theme,
+        home: const TelaInicial(),
+        routes: {
+          '/tela1': (context) => const Tela1(),
+        },
+      ),
     );
   }
 }
