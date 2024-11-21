@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TelaInicial extends StatelessWidget {
-  const TelaInicial({Key? key}) : super(key: key);
+class InitialScreen extends StatelessWidget {
+  const InitialScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

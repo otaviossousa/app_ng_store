@@ -1,9 +1,9 @@
-import 'package:app_ng_store/screens/categories.dart';
+import 'package:app_ng_store/screens/sessions_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class Home extends StatelessWidget {
           ),
         ),
 
-      body: const TelaCategorias(),
+      body: const SessionsScreen(),
 
       bottomNavigationBar: BottomNavigationBar(
         items: const [

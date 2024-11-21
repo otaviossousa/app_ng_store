@@ -1,41 +1,53 @@
-import 'package:flutter/material.dart';
-import 'package:app_ng_store/models/category.dart';
+import 'package:app_ng_store/models/session.dart';
 
-const avaiableCategory = [
-  Category(
-      id: 'c1',
+const availableSession = [
+  Session(
+      id: 's1',
       nome: 'Lancamentos',
-      descricao: 'Aproveite os últimos lançamentos!',
-      color: Colors.black12,
+      description: 'Aproveite os últimos lançamentos!',
+      imageUrl: 'https://raw.githubusercontent.com/otaviossousa/NG-Store-Angular/refs/heads/master/src/assets/img/games/lancamentos/god-of-war-ragnarok.jpg'
   ),
-  Category(
-      id: 'c2',
+  Session(
+      id: 's2',
       nome: 'Ofertas Especiais',
-      descricao: 'Aproveite os nossos descontos!',
-      color: Colors.black12,
+      description: 'Aproveite os nossos descontos!',
+      imageUrl: 'https://raw.githubusercontent.com/otaviossousa/NG-Store-Angular/refs/heads/master/src/assets/img/games/ofertas-especiais/mortal-kombat-1.jpg'
   ),
-  Category(
-      id: 'c3',
+  Session(
+      id: 's3',
       nome: 'From Software',
-      descricao: 'Desfrute do melhor do soulslike!',
-      color: Colors.black12,
+      description: 'Desfrute do melhor do soulslike!',
+      imageUrl: 'https://raw.githubusercontent.com/otaviossousa/NG-Store-Angular/refs/heads/master/src/assets/img/games/from-software/elden-ring.jpg'
   ),
-  Category(
-      id: 'c4',
+  Session(
+      id: 's4',
       nome: 'Ubisoft',
-      descricao: 'Jogos com até 80% de desconto!',
-      color: Colors.black12,
+      description: 'Jogos com até 80% de desconto!',
+      imageUrl: 'https://raw.githubusercontent.com/otaviossousa/NG-Store-Angular/refs/heads/master/src/assets/img/games/ubisoft/rainbow-six-siege.jpg'
   ),
-  Category(
-      id: 'c5',
+  Session(
+      id: 's5',
       nome: 'Capcom',
-      descricao: 'Jogos com até 70% de desconto!',
-      color: Colors.black12,
+      description: 'Jogos com até 70% de desconto!',
+      imageUrl: 'https://raw.githubusercontent.com/otaviossousa/NG-Store-Angular/refs/heads/master/src/assets/img/games/capcom/street-fighter-v.jpg'
   ),
-  Category(
-      id: 'c6',
+  Session(
+      id: 's6',
       nome: 'Warner Bros',
-      descricao: 'Jogos com até 90% de desconto!',
-      color: Colors.black12,
+      description: 'Jogos com até 90% de desconto!',
+      //back 4 blood
+      imageUrl: 'https://raw.githubusercontent.com/otaviossousa/NG-Store-Angular/refs/heads/master/src/assets/img/games/warner/back-for-blood.jpg'
+  ),
+  Session(
+    id: 's7',
+    nome: 'Devolver',
+    description: 'Jogos com até 90% de desconto!',
+    imageUrl: 'https://raw.githubusercontent.com/otaviossousa/NG-Store-Angular/refs/heads/master/src/assets/img/games/devolver/the-messenger.jpg'
+  ),
+  Session(
+    id: 's8',
+    nome: 'Ofertas da Semana',
+    description: 'Todas as nossas promoções em um só lugar!',
+    imageUrl: 'https://raw.githubusercontent.com/otaviossousa/NG-Store-Angular/refs/heads/master/src/assets/img/games/ofertas-da-semana/deadlink.jpg'
   )
 ];

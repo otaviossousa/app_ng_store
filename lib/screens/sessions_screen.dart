@@ -1,23 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:app_ng_store/widgets/category_grid_item.dart';
-import 'package:app_ng_store/data/category_data.dart';
+import 'package:app_ng_store/widgets/session_grid_item.dart';
+import 'package:app_ng_store/data/session_data.dart';
 
-class TelaCategorias extends StatelessWidget{
-  const TelaCategorias ({super.key});
+class SessionsScreen extends StatelessWidget {
+  const SessionsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: GridView(
+      body: Padding(
+        padding:
+            const EdgeInsets.only(top: 20),
+        child: GridView(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 3/2,
-              crossAxisSpacing: 20,
-              mainAxisSpacing: 20),
+            crossAxisCount: 2,
+            childAspectRatio: 3 / 3,
+            crossAxisSpacing: 15,
+            mainAxisSpacing: 15,
+          ),
+          padding:
+              const EdgeInsets.symmetric(horizontal: 15),
           children: [
-            for (final category in avaiableCategory )
-              CategoryGridItem( category: category)
-          ],)
+            for (final session in availableSession)
+              SessionGridItem(session: session),
+          ],
+        ),
+      ),
     );
   }
 }

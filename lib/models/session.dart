@@ -1,15 +1,13 @@
-import 'package:flutter/material.dart';
-
-class Category {
-  const Category({
+class Session {
+  const Session({
     required this.id,
     required this.nome,
-    required this.descricao,
-    this.color = Colors.black12,
+    required this.description,
+    required this.imageUrl,
   });
 
   final String id;
   final String nome;
-  final String descricao;
-  final Color color;
+  final String description;
+  final String imageUrl;
 }
