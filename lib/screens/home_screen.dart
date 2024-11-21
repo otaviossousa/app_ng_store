@@ -1,8 +1,9 @@
+import 'package:app_ng_store/screens/categories.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class Tela1 extends StatelessWidget {
-  const Tela1({Key? key}) : super(key: key);
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -52,17 +53,7 @@ class Tela1 extends StatelessWidget {
           ),
         ),
 
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Tela 1',
-              style: theme.textTheme.titleLarge,
-            ),
-          ],
-        ),
-      ),
+      body: const TelaCategorias(),
 
       bottomNavigationBar: BottomNavigationBar(
         items: const [
@@ -75,8 +66,8 @@ class Tela1 extends StatelessWidget {
             label: 'Carrinho',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Perfil',
+            icon: Icon(Icons.favorite),
+            label: 'Favortios',
           ),
         ],
       ),

@@ -19,7 +19,7 @@ class TelaInicial extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/tela1');
+                Navigator.pushNamed(context, '/home');
               },
               child: Text('Entrar'),
             ),
